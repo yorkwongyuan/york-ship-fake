@@ -1,0 +1,26 @@
+.alert {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.alert-success {
+  @include alert-style($alert-success-background, $alert-success-color)
+}
+
+.alert-large {
+  @include alert-style($alert-large-width)
+}
+
+.alert-medium {
+  @include alert-style($alert-large-width)
+}
+
+.alert-large {
+  @include alert-style($alert-large-width)
+}
+
+.alert-large {
+  @include alert-style($alert-large-width)
+}

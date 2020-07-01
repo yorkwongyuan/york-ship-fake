@@ -1,0 +1,28 @@
+.upload-list {
+  list-style: none;
+  cursor: pointer;
+}
+
+.upload-list .upload-filename-error {
+  color: red;
+}
+
+.upload-list:hover .upload-list__file-icon {
+  display: none;
+}
+
+.upload-list:hover .upload-list__del-btn {
+  display: inline-block;
+}
+
+.upload-list .upload-list__del-btn {
+  display: none;
+}
+
+.drag {
+  height: 300px;
+}
+
+.drag.is-drag-over {
+  background-color: blue;
+}

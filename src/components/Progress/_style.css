@@ -1,0 +1,8 @@
+.progress-bar .progress-outer {
+  position: relative;
+}
+
+.progress-bar .progress-outer .progress-inner {
+  position: absolute;
+  transition: all 0.3s;
+}

@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "ES5",
+    "module": "ESNext",
+    "declaration": true
+  },
+  "exclude": ["./**/*.test.js", "./**/*.stories.js"]
+}

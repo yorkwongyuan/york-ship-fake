@@ -1,0 +1,17 @@
+.upload-list {
+  list-style: none;
+  .upload-filename-error {
+    color: red;
+  }
+  .upload-list__file-icon {
+    &:hover {
+      display: none;
+    }
+  }
+  .upload-list__del-btn {
+    display: none;
+    &:hover {
+      display: inline-block;
+    }
+  }
+}

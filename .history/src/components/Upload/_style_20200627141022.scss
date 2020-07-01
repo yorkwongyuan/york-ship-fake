@@ -1,0 +1,28 @@
+.upload-list {
+  list-style: none;
+  .upload-filename-error {
+    color: red;
+  }
+  cursor: pointer;
+  &:hover {
+    .upload-list__file-icon {
+      display: none;
+    }
+    .upload-list__del-btn {
+      display: inline-block;
+    }
+  }
+  .upload-list__del-btn {
+    display: none;
+  }
+}
+
+.progress-bar {
+  .progress-outer {
+    position: relative;
+    .progress-inner {
+      position: absolute;
+      transition: all 0.3s;
+    }
+  }
+}

@@ -545,8 +545,54 @@ template {
   color: #e01313;
 }
 
-.my-input {
-  border: 1px solid red;
+.is-active {
+  background-color: blue;
+}
+
+.upload-list {
+  list-style: none;
+  cursor: pointer;
+}
+
+.upload-list .upload-filename-error {
+  color: red;
+}
+
+.upload-list:hover .upload-list__file-icon {
+  display: none;
+}
+
+.upload-list:hover .upload-list__del-btn {
+  display: inline-block;
+}
+
+.upload-list .upload-list__del-btn {
+  display: none;
+}
+
+.progress-inner-theme-primary {
+  background-color: #557be4;
+}
+
+.progress-inner-theme-secondary {
+  background-color: #809be2;
+}
+
+.progress-inner-theme-success {
+  background-color: #9ee792;
+}
+
+.progress-inner-theme-danger {
+  background-color: #e01313;
+}
+
+.progress-bar .progress-outer {
+  position: relative;
+}
+
+.progress-bar .progress-outer .progress-inner {
+  position: absolute;
+  transition: all 0.3s;
 }
 
 .zoom-in-top-enter {

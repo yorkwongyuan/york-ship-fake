@@ -1,0 +1,12 @@
+@each $key, $val in $theme-colors {
+  .progress-inner-theme-#{$key}: $val;
+}
+.progress-bar {
+  .progress-outer {
+    position: relative;
+    .progress-inner {
+      position: absolute;
+      transition: all 0.3s;
+    }
+  }
+}

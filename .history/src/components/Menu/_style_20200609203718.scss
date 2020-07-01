@@ -1,0 +1,36 @@
+.my-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 30px;
+  list-style: none;
+
+  // box-shadow: $menu-box-shadow;
+  border-bottom: $menu-border-width solid $menu-border-color;
+
+  .yk-menu-item {
+    padding: $menu-item-padding-y $menu-item-padding-x;
+    cursor: pointer;
+    transition: $menu-transition;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &.is-disabled {
+      color: $menu-item-disabled-color;
+      pointer-events: none;
+      cursor: default;
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: $menu-border-width solid $menu-border-color;
+    }
+  }
+
+  .my-submenu {
+    display: none;
+  }
+}

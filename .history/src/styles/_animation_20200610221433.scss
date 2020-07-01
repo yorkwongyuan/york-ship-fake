@@ -1,0 +1,25 @@
+.zoom-in-top-enter {
+  opacity: 0;
+  transform: scaleY(0);
+  background-color: green;
+}
+
+.zoom-in-top-enter-active {
+  opacity: 1;
+  transform: scaleY(1);
+  transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+  transform-origin: center top;
+  background-color: red;
+}
+
+.zoom-in-top-exit {
+  opacity: 1;
+  background-color: blue;
+}
+
+.zoom-in-top-enter-active {
+  opacity: 0;
+  transform: scaleY(0);
+  transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+  transform-origin: center top;
+}

@@ -1,0 +1,10 @@
+.alert {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.alert-success {
+  @include alert-style($alert-success-background, )
+}

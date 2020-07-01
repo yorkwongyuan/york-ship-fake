@@ -1,0 +1,143 @@
+$white: #fff !default;
+$green: #9ee792 !default;
+$yellow:#dbc713 !default;
+$blue:#557be4 !default;
+$red:#e01313 !default;
+$lightBlue: #809be2;
+$gray-900: #809be2;
+$dark: #000 !default;
+
+$primary: $blue;
+$secondary: $lightBlue;
+$success: $green;
+$danger: $red;
+$font-family-sans-serif: -apple-system,
+BlinkMacSystemFont;
+
+$font-family-base: $font-family-sans-serif !default;
+
+// 字体大小
+/** Windows：
+新細明體：PMingLiU
+細明體：  MingLiU
+標楷體：  DFKai-SB
+黑体：    SimHei
+新宋体：  NSimSun
+仿宋：    FangSong
+楷体：    KaiTi
+仿宋_GB2312：FangSong_GB2312
+楷体_GB2312：KaiTi_GB2312
+微軟正黑體： Microsoft JhengHei
+微软雅黑体： Microsoft YaHei
+
+宋体   SimSun
+黑体   SimHei
+微软雅黑    Microsoft YaHei
+微软正黑体  Microsoft JhengHei
+新宋体      NSimSun
+新细明体    PMingLiU
+细明体      MingLiU
+标楷体      DFKai-SB
+仿宋        FangSong
+楷体        KaiTi
+仿宋_GB2312   FangSong_GB2312
+楷体_GB2312   KaiTi_GB2312
+宋体：SimSuncss中中文字体（font-family）的英文名称
+$font-size-base: 1rem !default;
+$font-size-lg:$font-size-base * 1.25 !default;
+$font-size-sm:$font-size-base * .875 !default;
+
+华文细黑：STHeiti Light [STXihei]
+华文黑体：STHeiti
+华文楷体：STKaiti
+华文宋体：STSong
+华文仿宋：STFangsong
+儷黑 Pro：LiHei Pro Medium
+儷宋 Pro：LiSong Pro Light
+標楷體：BiauKai
+蘋果儷中黑：Apple LiGothic Medium
+蘋果儷細宋：Apple LiSung Light
+*/
+// 字重
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal:400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-base: $font-weight-normal !default;
+
+// 行高
+$line-height-base:1.5 !default;
+$line-height-lg:2 !default;
+$line-height-sm: 1.25 !default;
+
+// 标题大小
+$font-size-base:12px !default;
+$font-size-sm: 8px !default;
+$font-size-lg: 24px !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$link-color: $primary !default;
+$link-hover-color: blue !default;
+$link-decoration: none !default;
+$link-hover-color:darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+$body-bg: $white !default;
+$body-color:$white !default;
+$body-text-align: null !default;
+
+
+// 边框
+$border-width: 1px !default;
+$border-radius: .25rem !default;
+$border-radius-sm:.2rem !default;
+$border-radius-lg:.3rem !default;
+
+$btn-secondary-color:$secondary;
+
+// 按钮
+$btn-font-weight: 400 !default;
+$btn-padding-y:.375rem !default;
+$btn-padding-x:.75rem !default;
+$btn-font-size: $font-size-base !default;
+$btn-line-height:$line-height-base !default;
+
+// sm按钮
+$btn-padding-y-sm: .25rem !default;
+$btn-padding-x-sm:.5rem !default;
+$btn-font-size-sm: $font-size-sm !default;
+$btn-border-radius-sm: $border-radius-sm !default;
+
+// lg按钮
+$btn-padding-y-lg: .5rem !default;
+$btn-padding-x-lg: 1rem !default;
+$btn-font-size-lg: $font-size-lg !default;
+$btn-border-radius-lg: $border-radius-lg !default;
+
+// button-type
+// disabled
+$btn-disabled-opacity: .65 !default;
+
+// link
+$btn-link-color:$link-color !default;
+$btn-link-hover-color:$link-hover-color !default;
+
+// primary
+$btn-primary-color:$white;
+$btn-danger-color:$white;
+$btn-danger-background-color: $danger;
+
+$btn-border-radius: $border-radius !default;
+$btn-background-color-primary:$primary;
+
+$border-width:1px;
+
+
+$alert-success-background: $green;
+$alert-success-color:$white
