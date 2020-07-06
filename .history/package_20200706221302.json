@@ -27,7 +27,6 @@
     "@fortawesome/react-fontawesome": "^0.1.9",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
-    "husky": "^4.2.5",
     "react-transition-group": "^4.4.1"
   },
   "peerDependencies": {
@@ -45,12 +44,9 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "prepublish": "npm run test:no-watch && npm run lint && npm run build",
+    "prepublish": "npm run build",
     "node-sass": "^4.13.1",
     "lint": "eslint --ext .js,.tsx,.ts src"
-  },
-  "husky": {
-    "pre-commit": "npm run test:no-watch && npm run lint"
   },
   "eslintConfig": {
     "extends": "react-app"

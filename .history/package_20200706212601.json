@@ -14,9 +14,6 @@
     "type": "git",
     "url": "https://github.com/yorkwongyuan/york-ship-fake"
   },
-  "files": [
-    "dist"
-  ],
   "author": "wongyuan",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -25,32 +22,38 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
+    "@storybook/addon-info": "^5.2.8",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@types/classnames": "^2.2.9",
+    "@types/jest": "24.0.23",
+    "@types/node": "12.12.14",
+    "@types/react": "^16.9.33",
+    "@types/react-dom": "16.9.4",
+    "@types/react-transition-group": "^4.2.3",
+    "@types/storybook__addon-info": "^5.2.1",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
-    "husky": "^4.2.5",
-    "react-transition-group": "^4.4.1"
-  },
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-docgen-typescript-loader": "^3.6.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.4.1",
+    "react-transition-group": "^4.4.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "~3.7.2",
+    "vue": "^2.6.11"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "npm run clean && npm run build-ts && npm run build-css",
-    "clean": "rimraf ./dist",
-    "build-css": "node-sass ./src/styles/index.scss ./dist/index.css",
+    "clean": "rimraf ./build",
+    "build-css": "node-sass ./src/styles/index.scss ./build/index.css",
     "build-ts": "npx tsc -p tsconfig.build.json",
     "test": "react-scripts test",
-    "test:no-watch": "cross-env CI=true && npm run test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "prepublish": "npm run test:no-watch && npm run lint && npm run build",
-    "node-sass": "^4.13.1",
-    "lint": "eslint --ext .js,.tsx,.ts src"
-  },
-  "husky": {
-    "pre-commit": "npm run test:no-watch && npm run lint"
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -69,27 +72,10 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.3.19",
-    "@storybook/addon-info": "^5.2.8",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.0.1",
     "@storybook/react": "^5.3.19",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@types/classnames": "^2.2.9",
-    "@types/jest": "24.0.23",
-    "@types/node": "12.12.14",
-    "@types/react": "^16.9.33",
-    "@types/react-dom": "16.9.4",
-    "@types/react-transition-group": "^4.2.3",
-    "@types/storybook__addon-info": "^5.2.1",
-    "cross-env": "^7.0.2",
-    "react": "^16.12.0",
-    "react-docgen-typescript-loader": "^3.6.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.4.1",
-    "rimraf": "^3.0.2",
-    "ts-loader": "^7.0.5",
-    "typescript": "~3.7.2"
+    "rimraf": "^3.0.2"
   }
 }

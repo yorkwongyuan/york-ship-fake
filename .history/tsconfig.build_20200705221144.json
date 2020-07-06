@@ -6,7 +6,7 @@
     "declaration": true,
     "jsx": "react",
     "moduleResolution": "Node", // 模块解析的方法,如果用node,就会从node_modules中去寻找
-    "allowSyntheticDefaultImports": true // 如果设置为false,则引入将写为import * as React from 'react' 而不是import React from 'react'
+    "allowSyntheticDefaultImports": true // 如果设置为false,则引入将写为import * as React from 'react'
   },
   "include": ["src"],
   "exclude": ["src/**/*.test.tsx", "src/**/*.stories.tsx"]
