@@ -45,7 +45,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "prepublishOnly": "npm run test:no-watch && npm run lint && npm run build",
+    "prepublish": "npm run test:no-watch && npm run lint && npm run build",
     "lint": "eslint --ext .js,.tsx,.ts src"
   },
   "husky": {
