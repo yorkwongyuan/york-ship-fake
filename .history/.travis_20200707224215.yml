@@ -14,4 +14,4 @@ deploy:
   github_token: $github-token # Set in the settings page of your repository, as a secure variable
   local_dir: storybook-static
   on:
-    branch: test3
+    branch: master

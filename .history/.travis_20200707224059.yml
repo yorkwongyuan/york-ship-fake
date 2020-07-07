@@ -11,7 +11,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $github-token # Set in the settings page of your repository, as a secure variable
-  local_dir: storybook-static
+  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+  keep_history: true
   on:
-    branch: test3
+    branch: master
